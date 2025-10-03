@@ -16,7 +16,6 @@ Welcome to **Keylogger.py**, a simple yet powerful Python-based keylogger design
 - [Configuration](#configuration)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 - [Releases](#releases)
 
 ## Features
@@ -62,16 +61,16 @@ The keylogger will start capturing keystrokes and logging them to a local file. 
 
 Before running the keylogger, you may want to configure a few settings:
 
-1. **Set the Discord Webhook**: Open the `config.py` file and add your Discord webhook URL.
+1. **Set the Discord Webhook**: Open the `keylogger.py` file and add your Discord webhook URL.
 
    ```python
-   DISCORD_WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_URL"
+   webhook_url = "YOUR_DISCORD_WEBHOOK_URL"
    ```
 
-2. **Log File Path**: You can also change the path where logs are saved by modifying the `LOG_FILE` variable in `config.py`.
+2. **Log File Name**: You can change the name of the file where logs are saved by modifying the `LOG_FILE_NAME` variable in `keylogger.py`.
 
    ```python
-   LOG_FILE = "path/to/your/logfile.txt"
+   LOG_FILE_NAME = "keylog.txt"
    ```
 
 3. **Running in Background**: To run the keylogger in the background, consider using a process manager or running it in a terminal session that can be detached.
@@ -89,13 +88,6 @@ Contributions are welcome! If you have suggestions or improvements, please fork 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Contact
-
-For any inquiries or feedback, feel free to reach out:
-
-- **Email**: your.email@example.com
-- **Twitter**: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
 
 ## Releases
 
