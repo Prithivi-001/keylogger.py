@@ -1,0 +1,6 @@
+certifi<=2025.8.3
+charset-normalizer~=3.4.3
+idna~=3.10
+pynput<=1.8.1
+requests<=2.32.2
+urllib3~=2.5.0
