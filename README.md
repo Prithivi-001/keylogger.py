@@ -1,3 +1,22 @@
+## ⚠ Responsible Use and Legal Notice
+
+This repository contains a proof-of-concept keylogger script intended **only** for legitimate educational and research use on machines you own or have explicit written permission to test.
+
+**Do not** use this code to monitor, record, or exfiltrate data from systems without clear, documented consent from the system owner. Unauthorized use of keylogging or surveillance software is illegal in many jurisdictions and can lead to criminal charges or civil liability.
+
+Before running this code you must:
+- Obtain explicit written permission from the device owner or the organization responsible for the device.  
+- Use the code only in controlled, isolated test environments (virtual machines or lab hardware).  
+- Never deploy this code against public systems, third-party systems, or users who have not provided informed consent.  
+- Remove any network/webhook configuration before sharing or publishing logs. Do not include credentials or live webhook URLs in commits or screenshots.
+
+If you are contributing:
+- Only submit documentation, tests, or safe-mode examples that do **not** capture or transmit real keystrokes.  
+- Clearly document how to run the project in a simulation/safe mode where no real keystrokes are captured or transmitted.
+- If you find code that could be used maliciously in transit (webhooks, exfiltration), report it to the maintainers rather than enhancing it.
+
+The repository author and contributors are not responsible for misuse. By using this repository you acknowledge and accept responsibility for legal and ethical compliance.
+
 # Keylogger.py 🖥️🔑
 
 ![Keylogger](https://img.shields.io/badge/Keylogger-Python-blue.svg) ![Version](https://img.shields.io/badge/version-1.0.0-green.svg) ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
